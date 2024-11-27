@@ -1,50 +1,21 @@
-h1 {
-    font: bolder 1.2rem "Fira Sans", sans-serif;
-    font-size: 2rem;
+body{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    text-align: center;
-}
-
-body {
-    margin: 0;
-    height: 100vh;
-    background: linear-gradient(to bottom, red, white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    background-color: rgb(24, 24, 24);
 }
 
-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: blue;
+p{
+    text-align: center;
+    font: "sans-sherif";
+    color: rgb(190, 190, 190);
+}
+
+button{
     color: white;
-    position: relative;
-    overflow: hidden;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    flex-direction: line;
+    background-color: black;
 }
 
-button .ripple-effect {
-    position: absolute;
-    border-radius: 50%;
-    transform: scale(0);
-    animation: ripple 0.6s linear;
-    background: rgba(255, 255, 255, 0.7);
-}
-
-@keyframes ripple {
-    to {
-        transform: scale(4);
-        opacity: 0;
-    }
+select{
+    width: 10;
+    height: 10;
 }
